@@ -1,0 +1,115 @@
+{
+  "app": {
+    "title": "C盘清理助手",
+    "subtitle": "只清理明确选择的临时缓存；桌面、文档和下载不会被扫描或删除。",
+    "tag": "白名单保护"
+  },
+  "disk": {
+    "title": "C盘空间",
+    "loading": "正在读取...",
+    "unavailable": "暂时无法读取磁盘信息",
+    "free": "可用空间：{0}",
+    "used": "已用 {0} / 总计 {1}"
+  },
+  "list": {
+    "item": "清理项目",
+    "estimate": "预计可释放",
+    "description": "说明",
+    "working": "正在计算...",
+    "notScanned": "尚未扫描",
+    "noTargets": "没有可清理内容",
+    "needsAdmin": "需要管理员权限",
+    "browserRunning": "浏览器正在运行，关闭后重试",
+    "notCounted": "不统计",
+    "recycleItems": "{0:N0} 项",
+    "unavailable": "不可用",
+    "adminSuffix": "点击底部按钮以管理员身份重新打开后可清理。"
+  },
+  "buttons": {
+    "clean": "立即清理",
+    "scan": "重新扫描",
+    "elevate": "以管理员身份重新打开"
+  },
+  "auto": {
+    "label": "每天关机时自动清理已勾选项目",
+    "note": "关机清理若被 Windows 提前终止，会在下次登录 2 分钟后安全补做。",
+    "enableConfirm": "将启用后台清理任务。它只会在关机时和下次登录后清理当前勾选的缓存项目，不会弹出界面或删除个人文件。是否继续？",
+    "disableConfirm": "将关闭关机自动清理。已经释放的空间不会被恢复。是否继续？",
+    "confirmTitle": "自动清理设置",
+    "failed": "无法更新自动清理任务：\n\n{0}"
+  },
+  "status": {
+    "ready": "准备就绪。",
+    "scanning": "正在计算可清理空间，请稍候...",
+    "scanDone": "扫描完成。可以取消勾选不想清理的项目。",
+    "cleaning": "正在安全清理，占用的文件会自动跳过...",
+    "cleanDone": "清理完成。",
+    "failed": "操作失败，请查看日志。",
+    "autoEnabled": "关机自动清理已启用。",
+    "autoDisabled": "关机自动清理已关闭。"
+  },
+  "confirm": {
+    "title": "确认清理",
+    "clean": "即将清理当前勾选的项目。\n\n程序只处理列表中的缓存目录，正在使用的文件会自动跳过。",
+    "recycle": "你勾选了回收站。回收站中的内容会被永久删除，无法恢复。",
+    "noSelection": "请至少勾选一个要清理的项目。"
+  },
+  "result": {
+    "title": "清理结果",
+    "summary": "已释放空间：{0}\n删除文件：{1:N0} 项\n跳过正在使用或受限文件：{2:N0} 项\n失败：{3:N0} 项",
+    "recycleDone": "回收站已清空。",
+    "recycleDoneVerified": "回收站已清空并验证：原有 {0:N0} 项。",
+    "recycleAlreadyEmpty": "回收站原本就是空的。",
+    "skipped": "以下项目未清理：{0}",
+    "skippedLogged": "正在使用或权限受限的文件名已记录到清理日志。",
+    "failed": "清理失败：\n\n{0}"
+  },
+  "errors": {
+    "title": "发生错误"
+  },
+  "elevate": {
+    "cancelled": "已取消管理员权限请求。"
+  },
+  "links": {
+    "logs": "查看清理日志"
+  },
+  "uninstall": {
+    "done": "关机自动清理任务已移除。可以安全删除 C盘清理助手文件夹。",
+    "failed": "移除自动清理任务失败：{0}"
+  },
+  "category": {
+    "adminBadge": "系统",
+    "userTemp": {
+      "name": "用户临时文件",
+      "description": "当前用户和应用的临时文件；正在使用的文件会被跳过。"
+    },
+    "browserCache": {
+      "name": "浏览器网页缓存",
+      "description": "仅清理 Edge/Chrome 缓存；书签、密码、历史记录和 Cookie 不会受影响。"
+    },
+    "crashDumps": {
+      "name": "崩溃转储与错误报告",
+      "description": "清理应用崩溃转储和当前用户的错误报告归档。"
+    },
+    "shaderCache": {
+      "name": "显卡着色器缓存",
+      "description": "显卡缓存会按需自动重建，清理后首次启动大型程序可能稍慢。"
+    },
+    "systemTemp": {
+      "name": "Windows 临时文件",
+      "description": "Windows 系统临时目录；需要管理员权限。"
+    },
+    "errorReports": {
+      "name": "系统错误报告归档",
+      "description": "Windows 公共错误报告目录；需要管理员权限。"
+    },
+    "windowsUpdateCache": {
+      "name": "Windows 更新下载缓存",
+      "description": "清理后未完成的更新可能重新下载；需要管理员权限。"
+    },
+    "recycleBin": {
+      "name": "回收站",
+      "description": "永久清空回收站，删除后无法恢复；默认不勾选。"
+    }
+  }
+}
