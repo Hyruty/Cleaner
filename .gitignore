@@ -1,0 +1,7 @@
+# Build output
+obj/
+dist/*.pdb
+
+# Local scratch
+*.user
+.vs/
